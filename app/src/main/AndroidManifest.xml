@@ -25,9 +25,9 @@
 
         <provider
             android:name=".MyContentProvider"
-            android:authorities="com.grayraven.provider"
+            android:authorities="com.grayraven.ectest5.Elections"
             android:enabled="true"
-            android:exported="false"></provider>
+            android:exported="true"></provider>
     </application>
 
 </manifest>
