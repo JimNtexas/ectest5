@@ -20,14 +20,15 @@
         </activity>
 
         <service
-            android:name=".MyIntentService"
+            android:name=".DbService"
             android:exported="false" />
 
         <provider
             android:name=".MyContentProvider"
             android:authorities="com.grayraven.ectest5.Elections"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
+
     </application>
 
 </manifest>

@@ -1,14 +1,12 @@
 package com.grayraven.ectest5;
 
-import android.content.ContentValues;
-import android.database.Cursor;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         btnDoIt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SaveElection(1996, "1996 stuff");
-                SaveElection(2000, "2000 stuff");
+                SaveElection("1996", "1996 stuff");
+                SaveElection("2000", "2000 stuff");
             }
         });
 
@@ -39,20 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btnRead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-                Cursor c =  getContentResolver().query(uri, null, null, null, null);
-
-                if(c.moveToFirst()) {
-                    do {
-                        String year = c.getString(c.getColumnIndex(MyContentProvider.ELECTION_YEAR));
-                        String text = c.getString(c.getColumnIndex(MyContentProvider.ELECTION_TEXT));
-                        Log.d(TAG, "Year: " + year + " - " + text );
-                    } while (c.moveToNext());
-                }
-
-                c.close();
-
+                ReadElection();
             }
         });
 
@@ -75,15 +60,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void SaveElection(int year, String text) {
+    private void SaveElection(String year, String text) {
 
-        ContentValues values = new ContentValues();
-        values.put(MyContentProvider.ELECTION_YEAR, year);
-        values.put(MyContentProvider.ELECTION_TEXT, text);
+        Intent intent = new Intent(this, DbService.class);
+        intent.setAction(DbService.ACTION_WRITE);
+        intent.putExtra(DbService.EXTRA_YEAR, year);
+        intent.putExtra(DbService.EXTRA_TEXT, text);
+        startService(intent);
+    }
 
-        Uri uri = getContentResolver().insert(
-                MyContentProvider.CONTENT_URI, values);
-        Log.d(TAG, year + " saved at " + uri.toString());
+    private void ReadElection() {
+        Intent intent = new Intent(this, DbService.class);
+        intent.setAction(DbService.ACTION_READ);
+        startService(intent);
     }
 
     @Override
