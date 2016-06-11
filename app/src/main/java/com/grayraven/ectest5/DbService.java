@@ -8,20 +8,14 @@ import android.net.Uri;
 import android.util.Log;
 
 
-/**
- * An {@link IntentService} subclass for handling asynchronous task requests in
- * a service on a separate handler thread.
- * <p/>
- * TODO: Customize class - update intent actions and extra parameters.
+/*
+ * A service to access Summary text for a past presidential election
  */
 public class DbService extends IntentService {
 
     private static final String TAG = "DbService";
     Uri uri = MyContentProvider.CONTENT_URI;
 
-
-    // TODO: Rename actions, choose action names that describe tasks that this
-    // IntentService can perform, e.g. ACTION_FETCH_NEW_ITEMS
     public static final String ACTION_READ = "com.grayraven.ectest5.action.READ";
     public static final String ACTION_WRITE = "com.grayraven.ectest5.action.WRITE";
 

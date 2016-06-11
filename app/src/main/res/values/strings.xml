@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ectest5</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_election_gird">ElectionGird</string>
+    <string name="title_activity_election_grid">ElectionGrid</string>
+    <string name="title_activity_elections_view">ElectionsView</string>
 </resources>

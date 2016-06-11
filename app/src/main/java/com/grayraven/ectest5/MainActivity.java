@@ -49,6 +49,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnShowGrid = (Button)findViewById(R.id.btn_show_grid);
+        btnShowGrid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ElectionGrid.class);
+                startActivity(intent);
+
+            }
+        });
+
+        Button btnShowTable = (Button)findViewById(R.id.btn_style_table);
+        btnShowTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), StyleTable.class);
+                startActivity(intent);
+            }
+        });
+
 
        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -97,3 +116,13 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
+
+//http://stackoverflow.com/questions/2108456/how-can-i-create-a-table-with-borders-in-android
+//https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=android%20table%20layout%20detect%20click%20on%20cell
+//http://stackoverflow.com/questions/12734793/android-get-position-of-clicked-item-in-gridview
+//http://techlovejump.com/android-multicolumn-listview/
+
+//http://www.androidhive.info/2016/01/android-working-with-recycler-view/
+
+//https://github.com/InQBarna/TableFixHeaders

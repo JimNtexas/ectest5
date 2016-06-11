@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\temp\\CapstoneTemp\\TableFixHeaders-Wrapper\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shadow_right.xml",
+        "source": "E:\\temp\\CapstoneTemp\\TableFixHeaders-Wrapper\\library\\build\\intermediates\\bundles\\debug\\res\\drawable\\shadow_right.xml"
+    },
+    {
+        "merged": "E:\\temp\\CapstoneTemp\\TableFixHeaders-Wrapper\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shadow_top.xml",
+        "source": "E:\\temp\\CapstoneTemp\\TableFixHeaders-Wrapper\\library\\build\\intermediates\\bundles\\debug\\res\\drawable\\shadow_top.xml"
+    },
+    {
+        "merged": "E:\\temp\\CapstoneTemp\\TableFixHeaders-Wrapper\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shadow_bottom.xml",
+        "source": "E:\\temp\\CapstoneTemp\\TableFixHeaders-Wrapper\\library\\build\\intermediates\\bundles\\debug\\res\\drawable\\shadow_bottom.xml"
+    },
+    {
+        "merged": "E:\\temp\\CapstoneTemp\\TableFixHeaders-Wrapper\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shadow_left.xml",
+        "source": "E:\\temp\\CapstoneTemp\\TableFixHeaders-Wrapper\\library\\build\\intermediates\\bundles\\debug\\res\\drawable\\shadow_left.xml"
+    }
+]
