@@ -44,7 +44,15 @@ public class ElectionGrid extends AppCompatActivity {
         String tag = (String) cell.getTag();
         String name = getResources().getResourceEntryName(cell.getId());
         Log.d(TAG, "Clicked: " + tag + " - " + name); //use name
-        cell.setBackgroundResource(R.color.dem_blue);
+
+        if(tag.equals("D")){
+            cell.setBackgroundResource(R.color.dem_blue);
+            Log.d(TAG, "report that state " + name + " voted D");
+        } else {
+            cell.setBackgroundResource(R.color.rep_red);
+            Log.d(TAG, "report that state " + name + " voted R");
+        }
+
     }
 
 }
