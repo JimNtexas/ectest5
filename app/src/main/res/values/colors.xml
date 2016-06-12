@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="rep_red">#FF0000</color>
+    <color name="dem_blue">#2196F3</color>
+    <color name="cell_border">#808080</color>
+
 </resources>

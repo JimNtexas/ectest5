@@ -17,6 +17,7 @@ public class StyleTable extends Activity {
 
         TableFixHeaders tableFixHeaders = (TableFixHeaders) findViewById(R.id.table);
         tableFixHeaders.setAdapter(new MyAdapter(this));
+
     }
 
     public class MyAdapter extends ElectionTableAdapter {
@@ -55,7 +56,7 @@ public class StyleTable extends Activity {
 
         @Override
         public String getCellString(int row, int column) {
-            return "Lorem (" + row + ", " + column + ")";
+            return " Cell (" + row + ", " + column + ")";
         }
 
         @Override

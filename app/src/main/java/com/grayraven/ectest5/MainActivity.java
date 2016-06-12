@@ -7,10 +7,12 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btnShowTable = (Button)findViewById(R.id.btn_style_table);
+        Button btnShowTable = (Button)findViewById(R.id.btn_recycle);
         btnShowTable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +70,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnGridLayout = (Button)findViewById(R.id.btn_grid_layout);
+        btnGridLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),GridLayoutTest.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //http://stackoverflow.com/questions/24618829/how-to-add-dividers-and-spaces-between-items-in-recyclerview
+       /* Button btnRecycle = (Button)findViewById(R.id.btn_style_table);
+        btnShowTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), RecycleGrid.class);
+                startActivity(intent);
+            }
+        });
+*/
 
        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -115,6 +137,9 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }
 
 

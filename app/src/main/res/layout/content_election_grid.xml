@@ -8,150 +8,133 @@
     tools:showIn="@layout/activity_election_grid">
 
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
         <TableLayout
             android:id="@+id/election_table"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="80dp">
 
+        <!-- Header row -->
             <TableRow
                 android:id="@+id/tableRow1"
+                android:tag="header_row"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                >
 
                 <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium">
-                    android:tag="r1c1"
-                    android:"clickable"
-                </TextView>
+                    android:id="@+id/state_column"
+                    android:text="State"
+                    style="@style/StateCellStyle" />
 
                 <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    android:id="@+id/dem_column"
+                    android:text="Democratic"
+                    android:tag="r1c2"
+                    style="@style/StateCellStyle" />
 
                 <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    android:id="@+id/rep_column"
+                    style="@style/StateCellStyle"
+                    android:tag="r1c3"
+                    android:text="Republican"/>
+
+                <TextView
+                    android:id="@+id/split_col"
+                    android:tag="r1c3"
+                    android:text="Split"
+                    style="@style/StateCellStyle"/>
 
             </TableRow>
+            <!-- end header row -->
 
+            <!-- AL -->
             <TableRow
-                android:id="@+id/tableRow2"
+                android:id="@+id/al_row"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:tag="al_row"
+                >
 
                 <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    android:id="@+id/al_state"
+                    android:tag="al_state"
+                    android:text="Alabama"
+                    style="@style/StateCellStyle"/>
 
                 <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    android:id="@+id/al_dem"
+                    android:hint="D"
+                    android:tag="D"
+                    style="@style/StateCellStyle"/>
 
                 <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    android:id="@+id/al_rep"
+                    android:hint="R"
+                    android:tag="R"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/al_split"
+                    android:text=" - "
+                    style="@style/StateCellStyle"/>
             </TableRow>
-
+            
+            <!-- AK -->
             <TableRow
-                android:id="@+id/tableRow3"
+                android:id="@+id/ak_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/ak_state"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
+                    android:background="@drawable/white_cell_shape"
                     android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    android:text="Alaska"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"/>
 
                 <TextView
-                    android:id="@+id/textView77"
+                    android:id="@+id/ak_dem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
+                    android:background="@drawable/white_cell_shape"
                     android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:hint="D" />
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/ak_rep"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
+                    android:background="@drawable/white_cell_shape"
                     android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"
+                    android:hint="R" />
 
+                <TextView
+                    android:id="@+id/ak_split"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_cell_shape"
+                    android:padding="5dp"
+                    android:text=" - "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:clickable="true"/>
             </TableRow>
 
-            <TableRow
-                android:id="@+id/tableRow4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
 
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/black_cell_shape"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
-
-            </TableRow>
         </TableLayout>
-
+    </ScrollView>
    </LinearLayout>
 

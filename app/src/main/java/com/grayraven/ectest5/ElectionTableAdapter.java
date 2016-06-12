@@ -1,6 +1,7 @@
 package com.grayraven.ectest5;
 
 import android.content.Context;
+import android.database.DataSetObserver;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,6 +60,7 @@ public abstract class ElectionTableAdapter extends BaseTableAdapter {
         return converView;
     }
 
+
     /**
      * Sets the text to the view.
      *
@@ -81,4 +83,15 @@ public abstract class ElectionTableAdapter extends BaseTableAdapter {
     public abstract String getCellString(int row, int column);
 
     public abstract int getLayoutResource(int row, int column);
+
+
+    @Override
+    public void unregisterDataSetObserver(DataSetObserver observer) {
+        super.unregisterDataSetObserver(observer);
+    }
+
+    @Override
+    public void registerDataSetObserver(DataSetObserver observer) {
+        super.registerDataSetObserver(observer);
+    }
 }

@@ -4,4 +4,6 @@
     <string name="title_activity_election_gird">ElectionGird</string>
     <string name="title_activity_election_grid">ElectionGrid</string>
     <string name="title_activity_elections_view">ElectionsView</string>
+    <string name="title_activity_linear_layout_grid">LinearLayoutGrid</string>
+    <string name="title_activity_grid_layout_test">GridLayoutTest</string>
 </resources>

@@ -47,10 +47,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.grayraven.ectest5.MainActivity" />
         </activity>
-
         <activity
             android:name=".StyleTable"
             android:label="@string/title_activity_elections_view"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.grayraven.ectest5.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GridLayoutTest"
+            android:label="@string/title_activity_grid_layout_test"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
