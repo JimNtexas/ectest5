@@ -6,5 +6,7 @@
     <color name="rep_red">#FF0000</color>
     <color name="dem_blue">#2196F3</color>
     <color name="cell_border">#808080</color>
+    <color name="white">#ffffff</color>
+    <item name="purple" type="color">#FFAA66CC</item>
 
 </resources>
