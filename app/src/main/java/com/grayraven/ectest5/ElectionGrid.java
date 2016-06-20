@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +18,9 @@ import android.widget.Toast;
 public class ElectionGrid extends AppCompatActivity {
     private static final String TAG = "theGrid";
     TableLayout mTable;
+    private static final int OPTION_MENU_BASE = 0;
+    private int mDemVotes = 0;
+    private int mRepVotes = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +36,28 @@ public class ElectionGrid extends AppCompatActivity {
 
             @Override
             public void onClick(View v){
-                // TODO Auto-generated method stub
                 Log.d(TAG, "row " + mTable.indexOfChild(row) + " tag: " + (String) row.getTag());
             }
         });
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+    /* end oncreate*/
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) { //see also invalidateOptionsMenu
+        //add(int groupId, int itemId, int order, CharSequence title);
+        menu.clear();
+        menu.add(Menu.NONE,Menu.NONE,0, "option 0" );
+        menu.add(Menu.NONE,Menu.NONE,1, "option 1");
+
+
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return super.onOptionsItemSelected(item);
     }
 
     public void cellClick(View v) {
@@ -129,12 +150,10 @@ public class ElectionGrid extends AppCompatActivity {
     }
 
     private void  ClearStateCells(String name, int colorId, String demVotes, String repVotes) {
-        Log.d(TAG, "clearing cells for " + name);
         String thisRow = "";
         for(String token : name.split("_")) {
             thisRow = token; // row is the last token
         }
-        Log.d(TAG, "clearing row: " + thisRow);
         int nRow = Integer.parseInt(thisRow);
         TableRow tRow =(TableRow) mTable.getChildAt(nRow);
         TextView tview1 = (TextView)tRow.getChildAt(1);
@@ -151,5 +170,8 @@ public class ElectionGrid extends AppCompatActivity {
     }
 
 }
+
+//horizontal line:
+//http://stackoverflow.com/questions/5049852/android-drawing-separator-divider-line-in-layout
 
 

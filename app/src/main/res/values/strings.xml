@@ -6,4 +6,5 @@
     <string name="title_activity_elections_view">ElectionsView</string>
     <string name="title_activity_linear_layout_grid">LinearLayoutGrid</string>
     <string name="title_activity_grid_layout_test">GridLayoutTest</string>
+    <string name="btn_save_text">Save</string>
 </resources>

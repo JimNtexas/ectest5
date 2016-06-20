@@ -73,3 +73,4 @@ public class DbService extends IntentService {
         Log.d(TAG, year + " saved at " + uri.toString());
     }
 }
+//https://en.wikipedia.org/wiki/United_States_presidential_election,_2000
