@@ -45,9 +45,9 @@ public class ElectionGrid extends AppCompatActivity {
 
 
         initVoteAllocations();
-        sortAllocationsByState(mAllocation2000);
+       /* sortAllocationsByState(mAllocation2000);
         Log.d(TAG, "sorted by abv:");
-        for(VoteAllocation  a : mAllocation2000){
+        for (VoteAllocation a : mAllocation2000) {
             Log.d(TAG, a.getAbv() + " : " + a.getVotes());
         }
 
@@ -55,12 +55,12 @@ public class ElectionGrid extends AppCompatActivity {
         Log.d(TAG, "sorted by total votes");
         sortAllocationsByVotes(mAllocation2000);
 
-        for(VoteAllocation  a : mAllocation2000){
+        for (VoteAllocation a : mAllocation2000) {
             Log.d(TAG, a.getAbv() + " : " + a.getVotes());
-        }
+        }*/
 
 
-       /* mTable  = (TableLayout)findViewById(R.id.election_table);
+        mTable  = (TableLayout)findViewById(R.id.election_table);
         final View row=mTable.getChildAt(1);
         row.setClickable(true);
         row.setOnClickListener(new View.OnClickListener(){
@@ -69,12 +69,9 @@ public class ElectionGrid extends AppCompatActivity {
             public void onClick(View v){
                 Log.d(TAG, "row " + mTable.indexOfChild(row) + " tag: " + (String) row.getTag());
             }
-        });*/
+        });
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
-
 
 
     }
@@ -84,8 +81,8 @@ public class ElectionGrid extends AppCompatActivity {
     public boolean onPrepareOptionsMenu(Menu menu) { //see also invalidateOptionsMenu
         //add(int groupId, int itemId, int order, CharSequence title);
         menu.clear();
-        menu.add(Menu.NONE,Menu.NONE,0, "option 0" );
-        menu.add(Menu.NONE,Menu.NONE,1, "option 1");
+        menu.add(Menu.NONE, Menu.NONE, 0, "option 0");
+        menu.add(Menu.NONE, Menu.NONE, 1, "option 1");
 
 
         return super.onPrepareOptionsMenu(menu);
@@ -102,19 +99,18 @@ public class ElectionGrid extends AppCompatActivity {
         String tag = (String) cell.getTag();
         String name = getResources().getResourceEntryName(cell.getId());
         Log.d(TAG, "Clicked: " + tag + " - " + name); //use name
-        if(tag.contains("split")) {
+        if (tag.contains("split")) {
             Log.d(TAG, "ignore " + tag);
             return;
         }
-        if(tag.contains("votes"))
-        {
-            HandleSplitVotes(name,tag);
+        if (tag.contains("votes")) {
+            HandleSplitVotes(name, tag);
             return;
         }
 
         ClearStateCells(name, R.color.white, "", "");
 
-        if(tag.equals("D")){
+        if (tag.equals("D")) {
             cell.setBackgroundResource(R.color.dem_blue);
             Log.d(TAG, "report that state " + name + " voted D");
         } else {
@@ -128,21 +124,21 @@ public class ElectionGrid extends AppCompatActivity {
         Log.d(TAG, "handle split votes for " + tag);
         final Dialog splitDlg = new Dialog(this);
         splitDlg.setContentView(R.layout.vote_split_dlg);
-        TextView titleView = (TextView)splitDlg.findViewById(R.id.dlgTitle);
+        TextView titleView = (TextView) splitDlg.findViewById(R.id.dlgTitle);
         String title = (String) titleView.getText();
         int maxVotes = 0;
-        if(name.contains("ME")) {
+        if (name.contains("ME")) {
             title = "Maine has 4 votes";
             maxVotes = 4;
         }
 
-        if(name.contains("NE")) {
+        if (name.contains("NE")) {
             title = "Nebraska has 5 votes";
-            maxVotes=5;
+            maxVotes = 5;
         }
         titleView.setText(title);
 
-        final Button dlgOk = (Button)splitDlg.findViewById(R.id.dlg_ok);
+        final Button dlgOk = (Button) splitDlg.findViewById(R.id.dlg_ok);
         final int finalMaxVotes = maxVotes;
         dlgOk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,7 +148,7 @@ public class ElectionGrid extends AppCompatActivity {
                 String demVotes = String.valueOf(demEdit.getText());
                 String repVotes = String.valueOf(repEdit.getText());
                 Log.d(TAG, "dem: " + demVotes + " - rep: " + repVotes);
-                if(Integer.parseInt(demVotes) + Integer.parseInt(repVotes) != finalMaxVotes){
+                if (Integer.parseInt(demVotes) + Integer.parseInt(repVotes) != finalMaxVotes) {
                     String error = "Please enter " + Integer.toString(finalMaxVotes) + " total votes";
                     Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
                     return;
@@ -167,7 +163,7 @@ public class ElectionGrid extends AppCompatActivity {
             }*/
         });
 
-        final Button dlogCancel = (Button)splitDlg.findViewById(R.id.dlg_cancel);
+        final Button dlogCancel = (Button) splitDlg.findViewById(R.id.dlg_cancel);
         dlogCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -181,25 +177,25 @@ public class ElectionGrid extends AppCompatActivity {
 
     private void SaveSplitVote(String name, String tag, String demVotes, String repVotes) {
         Log.d(TAG, "split name: " + name);
-        Log.d(TAG, "Report " + tag + " spilt vote: " + "D: " + demVotes + " - R: " + repVotes );
+        Log.d(TAG, "Report " + tag + " spilt vote: " + "D: " + demVotes + " - R: " + repVotes);
         ClearStateCells(name, R.color.purple, demVotes, repVotes);
     }
 
-    private void  ClearStateCells(String name, int colorId, String demVotes, String repVotes) {
+    private void ClearStateCells(String name, int colorId, String demVotes, String repVotes) {
         String thisRow = "";
-        for(String token : name.split("_")) {
+        for (String token : name.split("_")) {
             thisRow = token; // row is the last token
         }
         int nRow = Integer.parseInt(thisRow);
-        TableRow tRow =(TableRow) mTable.getChildAt(nRow);
-        TextView tview1 = (TextView)tRow.getChildAt(1);
-        if(!demVotes.isEmpty()){
+        TableRow tRow = (TableRow) mTable.getChildAt(nRow);
+        TextView tview1 = (TextView) tRow.getChildAt(1);
+        if (!demVotes.isEmpty()) {
             tview1.setText(demVotes);
         }
 
         tview1.setBackgroundResource(colorId);
-        TextView tview2 = (TextView)tRow.getChildAt(2);
-        if(!repVotes.isEmpty()){
+        TextView tview2 = (TextView) tRow.getChildAt(2);
+        if (!repVotes.isEmpty()) {
             tview2.setText(repVotes);
         }
         tview2.setBackgroundResource(colorId);
@@ -208,32 +204,36 @@ public class ElectionGrid extends AppCompatActivity {
     //Lists that contain the decennial allocation of electoral college votes by state
     private void initVoteAllocations() {
         Gson gson = new Gson();
-        Type listType = new TypeToken<List<VoteAllocation>>(){}.getType();
+        Type listType = new TypeToken<List<VoteAllocation>>() {
+        }.getType();
         mAllocation2000 = (ArrayList<VoteAllocation>) gson.fromJson(VoteAllocations.Votes2000, listType);
         mallocation1990 = (ArrayList<VoteAllocation>) gson.fromJson(VoteAllocations.Votes1990, listType);
     }
 
     private void sortAllocationsByState(ArrayList<VoteAllocation> list) {
         Collections.sort(list, new Comparator<VoteAllocation>() {
-           public int compare(VoteAllocation a1, VoteAllocation a2){
-               return a1.getAbv().compareTo(a2.getAbv());
-           }
+            public int compare(VoteAllocation a1, VoteAllocation a2) {
+                return a1.getAbv().compareTo(a2.getAbv());
+            }
         });
     }
 
     private void sortAllocationsByVotes(ArrayList<VoteAllocation> list) {
         Collections.sort(list, new Comparator<VoteAllocation>() {
-            public int compare(VoteAllocation a1, VoteAllocation a2){
+            public int compare(VoteAllocation a1, VoteAllocation a2) {
                 int a = Integer.parseInt(a1.getVotes());
                 int b = Integer.parseInt(a2.getVotes());
-                return  b - a; // use a - b to sort low to high
+                return b - a; // use a - b to sort low to high
             }
         });
     }
 
-}
+    private void initGrid(boolean byName) {
+        if(mTable == null) {
+            return;
+        }
+    }
 
-//horizontal line:
-//http://stackoverflow.com/questions/5049852/android-drawing-separator-divider-line-in-layout
+}
 
 

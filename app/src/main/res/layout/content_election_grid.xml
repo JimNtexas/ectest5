@@ -141,7 +141,1791 @@
 
             </TableRow>
             <!-- end header row -->
+            <!-- 1 -->
+            <TableRow
+                android:id="@+id/row_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_1"
+                >
 
+                <TextView
+                    android:id="@+id/state_1"
+                    android:tag="state_1"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_1"
+                    android:hint="D"
+                    android:tag="D-1"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_1"
+                    android:hint="R"
+                    android:tag="R-1"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_1"
+                    android:text=" - "
+                    android:tag="1-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 1 -->
+            <!-- 2 -->
+            <TableRow
+                android:id="@+id/row_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_2"
+                >
+
+                <TextView
+                    android:id="@+id/state_2"
+                    android:tag="state_2"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_2"
+                    android:hint="D"
+                    android:tag="D-2"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_2"
+                    android:hint="R"
+                    android:tag="R-2"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_2"
+                    android:text=" - "
+                    android:tag="2-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 2 -->
+            <!-- 3 -->
+            <TableRow
+                android:id="@+id/row_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_3"
+                >
+
+                <TextView
+                    android:id="@+id/state_3"
+                    android:tag="state_3"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_3"
+                    android:hint="D"
+                    android:tag="D-3"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_3"
+                    android:hint="R"
+                    android:tag="R-3"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_3"
+                    android:text=" - "
+                    android:tag="3-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 3 -->
+            <!-- 4 -->
+            <TableRow
+                android:id="@+id/row_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_4"
+                >
+
+                <TextView
+                    android:id="@+id/state_4"
+                    android:tag="state_4"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_4"
+                    android:hint="D"
+                    android:tag="D-4"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_4"
+                    android:hint="R"
+                    android:tag="R-4"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_4"
+                    android:text=" - "
+                    android:tag="4-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 4 -->
+            <!-- 5 -->
+            <TableRow
+                android:id="@+id/row_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_5"
+                >
+
+                <TextView
+                    android:id="@+id/state_5"
+                    android:tag="state_5"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_5"
+                    android:hint="D"
+                    android:tag="D-5"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_5"
+                    android:hint="R"
+                    android:tag="R-5"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_5"
+                    android:text=" - "
+                    android:tag="5-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 5 -->
+            <!-- 6 -->
+            <TableRow
+                android:id="@+id/row_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_6"
+                >
+
+                <TextView
+                    android:id="@+id/state_6"
+                    android:tag="state_6"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_6"
+                    android:hint="D"
+                    android:tag="D-6"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_6"
+                    android:hint="R"
+                    android:tag="R-6"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_6"
+                    android:text=" - "
+                    android:tag="6-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 6 -->
+            <!-- 7 -->
+            <TableRow
+                android:id="@+id/row_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_7"
+                >
+
+                <TextView
+                    android:id="@+id/state_7"
+                    android:tag="state_7"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_7"
+                    android:hint="D"
+                    android:tag="D-7"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_7"
+                    android:hint="R"
+                    android:tag="R-7"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_7"
+                    android:text=" - "
+                    android:tag="7-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 7 -->
+            <!-- 8 -->
+            <TableRow
+                android:id="@+id/row_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_8"
+                >
+
+                <TextView
+                    android:id="@+id/state_8"
+                    android:tag="state_8"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_8"
+                    android:hint="D"
+                    android:tag="D-8"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_8"
+                    android:hint="R"
+                    android:tag="R-8"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_8"
+                    android:text=" - "
+                    android:tag="8-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 8 -->
+            <!-- 9 -->
+            <TableRow
+                android:id="@+id/row_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_9"
+                >
+
+                <TextView
+                    android:id="@+id/state_9"
+                    android:tag="state_9"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_9"
+                    android:hint="D"
+                    android:tag="D-9"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_9"
+                    android:hint="R"
+                    android:tag="R-9"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_9"
+                    android:text=" - "
+                    android:tag="9-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 9 -->
+            <!-- 10 -->
+            <TableRow
+                android:id="@+id/row_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_10"
+                >
+
+                <TextView
+                    android:id="@+id/state_10"
+                    android:tag="state_10"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_10"
+                    android:hint="D"
+                    android:tag="D-10"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_10"
+                    android:hint="R"
+                    android:tag="R-10"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_10"
+                    android:text=" - "
+                    android:tag="10-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 10 -->
+            <!-- 11 -->
+            <TableRow
+                android:id="@+id/row_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_11"
+                >
+
+                <TextView
+                    android:id="@+id/state_11"
+                    android:tag="state_11"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_11"
+                    android:hint="D"
+                    android:tag="D-11"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_11"
+                    android:hint="R"
+                    android:tag="R-11"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_11"
+                    android:text=" - "
+                    android:tag="11-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 11 -->
+            <!-- 12 -->
+            <TableRow
+                android:id="@+id/row_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_12"
+                >
+
+                <TextView
+                    android:id="@+id/state_12"
+                    android:tag="state_12"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_12"
+                    android:hint="D"
+                    android:tag="D-12"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_12"
+                    android:hint="R"
+                    android:tag="R-12"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_12"
+                    android:text=" - "
+                    android:tag="12-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 12 -->
+            <!-- 13 -->
+            <TableRow
+                android:id="@+id/row_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_13"
+                >
+
+                <TextView
+                    android:id="@+id/state_13"
+                    android:tag="state_13"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_13"
+                    android:hint="D"
+                    android:tag="D-13"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_13"
+                    android:hint="R"
+                    android:tag="R-13"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_13"
+                    android:text=" - "
+                    android:tag="13-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 13 -->
+            <!-- 14 -->
+            <TableRow
+                android:id="@+id/row_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_14"
+                >
+
+                <TextView
+                    android:id="@+id/state_14"
+                    android:tag="state_14"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_14"
+                    android:hint="D"
+                    android:tag="D-14"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_14"
+                    android:hint="R"
+                    android:tag="R-14"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_14"
+                    android:text=" - "
+                    android:tag="14-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 14 -->
+            <!-- 15 -->
+            <TableRow
+                android:id="@+id/row_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_15"
+                >
+
+                <TextView
+                    android:id="@+id/state_15"
+                    android:tag="state_15"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_15"
+                    android:hint="D"
+                    android:tag="D-15"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_15"
+                    android:hint="R"
+                    android:tag="R-15"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_15"
+                    android:text=" - "
+                    android:tag="15-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 15 -->
+            <!-- 16 -->
+            <TableRow
+                android:id="@+id/row_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_16"
+                >
+
+                <TextView
+                    android:id="@+id/state_16"
+                    android:tag="state_16"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_16"
+                    android:hint="D"
+                    android:tag="D-16"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_16"
+                    android:hint="R"
+                    android:tag="R-16"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_16"
+                    android:text=" - "
+                    android:tag="16-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 16 -->
+            <!-- 17 -->
+            <TableRow
+                android:id="@+id/row_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_17"
+                >
+
+                <TextView
+                    android:id="@+id/state_17"
+                    android:tag="state_17"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_17"
+                    android:hint="D"
+                    android:tag="D-17"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_17"
+                    android:hint="R"
+                    android:tag="R-17"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_17"
+                    android:text=" - "
+                    android:tag="17-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 17 -->
+            <!-- 18 -->
+            <TableRow
+                android:id="@+id/row_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_18"
+                >
+
+                <TextView
+                    android:id="@+id/state_18"
+                    android:tag="state_18"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_18"
+                    android:hint="D"
+                    android:tag="D-18"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_18"
+                    android:hint="R"
+                    android:tag="R-18"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_18"
+                    android:text=" - "
+                    android:tag="18-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 18 -->
+            <!-- 19 -->
+            <TableRow
+                android:id="@+id/row_19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_19"
+                >
+
+                <TextView
+                    android:id="@+id/state_19"
+                    android:tag="state_19"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_19"
+                    android:hint="D"
+                    android:tag="D-19"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_19"
+                    android:hint="R"
+                    android:tag="R-19"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_19"
+                    android:text=" - "
+                    android:tag="19-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 19 -->
+            <!-- 20 -->
+            <TableRow
+                android:id="@+id/row_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_20"
+                >
+
+                <TextView
+                    android:id="@+id/state_20"
+                    android:tag="state_20"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_20"
+                    android:hint="D"
+                    android:tag="D-20"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_20"
+                    android:hint="R"
+                    android:tag="R-20"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_20"
+                    android:text=" - "
+                    android:tag="20-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 20 -->
+            <!-- 21 -->
+            <TableRow
+                android:id="@+id/row_21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_21"
+                >
+
+                <TextView
+                    android:id="@+id/state_21"
+                    android:tag="state_21"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_21"
+                    android:hint="D"
+                    android:tag="D-21"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_21"
+                    android:hint="R"
+                    android:tag="R-21"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_21"
+                    android:text=" - "
+                    android:tag="21-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 21 -->
+            <!-- 22 -->
+            <TableRow
+                android:id="@+id/row_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_22"
+                >
+
+                <TextView
+                    android:id="@+id/state_22"
+                    android:tag="state_22"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_22"
+                    android:hint="D"
+                    android:tag="D-22"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_22"
+                    android:hint="R"
+                    android:tag="R-22"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_22"
+                    android:text=" - "
+                    android:tag="22-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 22 -->
+            <!-- 23 -->
+            <TableRow
+                android:id="@+id/row_23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_23"
+                >
+
+                <TextView
+                    android:id="@+id/state_23"
+                    android:tag="state_23"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_23"
+                    android:hint="D"
+                    android:tag="D-23"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_23"
+                    android:hint="R"
+                    android:tag="R-23"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_23"
+                    android:text=" - "
+                    android:tag="23-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 23 -->
+            <!-- 24 -->
+            <TableRow
+                android:id="@+id/row_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_24"
+                >
+
+                <TextView
+                    android:id="@+id/state_24"
+                    android:tag="state_24"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_24"
+                    android:hint="D"
+                    android:tag="D-24"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_24"
+                    android:hint="R"
+                    android:tag="R-24"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_24"
+                    android:text=" - "
+                    android:tag="24-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 24 -->
+            <!-- 25 -->
+            <TableRow
+                android:id="@+id/row_25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_25"
+                >
+
+                <TextView
+                    android:id="@+id/state_25"
+                    android:tag="state_25"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_25"
+                    android:hint="D"
+                    android:tag="D-25"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_25"
+                    android:hint="R"
+                    android:tag="R-25"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_25"
+                    android:text=" - "
+                    android:tag="25-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 25 -->
+            <!-- 26 -->
+            <TableRow
+                android:id="@+id/row_26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_26"
+                >
+
+                <TextView
+                    android:id="@+id/state_26"
+                    android:tag="state_26"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_26"
+                    android:hint="D"
+                    android:tag="D-26"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_26"
+                    android:hint="R"
+                    android:tag="R-26"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_26"
+                    android:text=" - "
+                    android:tag="26-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 26 -->
+            <!-- 27 -->
+            <TableRow
+                android:id="@+id/row_27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_27"
+                >
+
+                <TextView
+                    android:id="@+id/state_27"
+                    android:tag="state_27"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_27"
+                    android:hint="D"
+                    android:tag="D-27"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_27"
+                    android:hint="R"
+                    android:tag="R-27"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_27"
+                    android:text=" - "
+                    android:tag="27-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 27 -->
+            <!-- 28 -->
+            <TableRow
+                android:id="@+id/row_28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_28"
+                >
+
+                <TextView
+                    android:id="@+id/state_28"
+                    android:tag="state_28"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_28"
+                    android:hint="D"
+                    android:tag="D-28"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_28"
+                    android:hint="R"
+                    android:tag="R-28"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_28"
+                    android:text=" - "
+                    android:tag="28-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 28 -->
+            <!-- 29 -->
+            <TableRow
+                android:id="@+id/row_29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_29"
+                >
+
+                <TextView
+                    android:id="@+id/state_29"
+                    android:tag="state_29"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_29"
+                    android:hint="D"
+                    android:tag="D-29"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_29"
+                    android:hint="R"
+                    android:tag="R-29"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_29"
+                    android:text=" - "
+                    android:tag="29-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 29 -->
+            <!-- 30 -->
+            <TableRow
+                android:id="@+id/row_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_30"
+                >
+
+                <TextView
+                    android:id="@+id/state_30"
+                    android:tag="state_30"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_30"
+                    android:hint="D"
+                    android:tag="D-30"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_30"
+                    android:hint="R"
+                    android:tag="R-30"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_30"
+                    android:text=" - "
+                    android:tag="30-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 30 -->
+            <!-- 31 -->
+            <TableRow
+                android:id="@+id/row_31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_31"
+                >
+
+                <TextView
+                    android:id="@+id/state_31"
+                    android:tag="state_31"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_31"
+                    android:hint="D"
+                    android:tag="D-31"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_31"
+                    android:hint="R"
+                    android:tag="R-31"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_31"
+                    android:text=" - "
+                    android:tag="31-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 31 -->
+            <!-- 32 -->
+            <TableRow
+                android:id="@+id/row_32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_32"
+                >
+
+                <TextView
+                    android:id="@+id/state_32"
+                    android:tag="state_32"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_32"
+                    android:hint="D"
+                    android:tag="D-32"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_32"
+                    android:hint="R"
+                    android:tag="R-32"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_32"
+                    android:text=" - "
+                    android:tag="32-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 32 -->
+            <!-- 33 -->
+            <TableRow
+                android:id="@+id/row_33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_33"
+                >
+
+                <TextView
+                    android:id="@+id/state_33"
+                    android:tag="state_33"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_33"
+                    android:hint="D"
+                    android:tag="D-33"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_33"
+                    android:hint="R"
+                    android:tag="R-33"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_33"
+                    android:text=" - "
+                    android:tag="33-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 33 -->
+            <!-- 34 -->
+            <TableRow
+                android:id="@+id/row_34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_34"
+                >
+
+                <TextView
+                    android:id="@+id/state_34"
+                    android:tag="state_34"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_34"
+                    android:hint="D"
+                    android:tag="D-34"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_34"
+                    android:hint="R"
+                    android:tag="R-34"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_34"
+                    android:text=" - "
+                    android:tag="34-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 34 -->
+            <!-- 35 -->
+            <TableRow
+                android:id="@+id/row_35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_35"
+                >
+
+                <TextView
+                    android:id="@+id/state_35"
+                    android:tag="state_35"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_35"
+                    android:hint="D"
+                    android:tag="D-35"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_35"
+                    android:hint="R"
+                    android:tag="R-35"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_35"
+                    android:text=" - "
+                    android:tag="35-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 35 -->
+            <!-- 36 -->
+            <TableRow
+                android:id="@+id/row_36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_36"
+                >
+
+                <TextView
+                    android:id="@+id/state_36"
+                    android:tag="state_36"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_36"
+                    android:hint="D"
+                    android:tag="D-36"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_36"
+                    android:hint="R"
+                    android:tag="R-36"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_36"
+                    android:text=" - "
+                    android:tag="36-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 36 -->
+            <!-- 37 -->
+            <TableRow
+                android:id="@+id/row_37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_37"
+                >
+
+                <TextView
+                    android:id="@+id/state_37"
+                    android:tag="state_37"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_37"
+                    android:hint="D"
+                    android:tag="D-37"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_37"
+                    android:hint="R"
+                    android:tag="R-37"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_37"
+                    android:text=" - "
+                    android:tag="37-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 37 -->
+            <!-- 38 -->
+            <TableRow
+                android:id="@+id/row_38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_38"
+                >
+
+                <TextView
+                    android:id="@+id/state_38"
+                    android:tag="state_38"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_38"
+                    android:hint="D"
+                    android:tag="D-38"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_38"
+                    android:hint="R"
+                    android:tag="R-38"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_38"
+                    android:text=" - "
+                    android:tag="38-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 38 -->
+            <!-- 39 -->
+            <TableRow
+                android:id="@+id/row_39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_39"
+                >
+
+                <TextView
+                    android:id="@+id/state_39"
+                    android:tag="state_39"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_39"
+                    android:hint="D"
+                    android:tag="D-39"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_39"
+                    android:hint="R"
+                    android:tag="R-39"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_39"
+                    android:text=" - "
+                    android:tag="39-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 39 -->
+            <!-- 40 -->
+            <TableRow
+                android:id="@+id/row_40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_40"
+                >
+
+                <TextView
+                    android:id="@+id/state_40"
+                    android:tag="state_40"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_40"
+                    android:hint="D"
+                    android:tag="D-40"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_40"
+                    android:hint="R"
+                    android:tag="R-40"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_40"
+                    android:text=" - "
+                    android:tag="40-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 40 -->
+            <!-- 41 -->
+            <TableRow
+                android:id="@+id/row_41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_41"
+                >
+
+                <TextView
+                    android:id="@+id/state_41"
+                    android:tag="state_41"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_41"
+                    android:hint="D"
+                    android:tag="D-41"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_41"
+                    android:hint="R"
+                    android:tag="R-41"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_41"
+                    android:text=" - "
+                    android:tag="41-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 41 -->
+            <!-- 42 -->
+            <TableRow
+                android:id="@+id/row_42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_42"
+                >
+
+                <TextView
+                    android:id="@+id/state_42"
+                    android:tag="state_42"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_42"
+                    android:hint="D"
+                    android:tag="D-42"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_42"
+                    android:hint="R"
+                    android:tag="R-42"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_42"
+                    android:text=" - "
+                    android:tag="42-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 42 -->
+            <!-- 43 -->
+            <TableRow
+                android:id="@+id/row_43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_43"
+                >
+
+                <TextView
+                    android:id="@+id/state_43"
+                    android:tag="state_43"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_43"
+                    android:hint="D"
+                    android:tag="D-43"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_43"
+                    android:hint="R"
+                    android:tag="R-43"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_43"
+                    android:text=" - "
+                    android:tag="43-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 43 -->
+            <!-- 44 -->
+            <TableRow
+                android:id="@+id/row_44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_44"
+                >
+
+                <TextView
+                    android:id="@+id/state_44"
+                    android:tag="state_44"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_44"
+                    android:hint="D"
+                    android:tag="D-44"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_44"
+                    android:hint="R"
+                    android:tag="R-44"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_44"
+                    android:text=" - "
+                    android:tag="44-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 44 -->
+            <!-- 45 -->
+            <TableRow
+                android:id="@+id/row_45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_45"
+                >
+
+                <TextView
+                    android:id="@+id/state_45"
+                    android:tag="state_45"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_45"
+                    android:hint="D"
+                    android:tag="D-45"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_45"
+                    android:hint="R"
+                    android:tag="R-45"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_45"
+                    android:text=" - "
+                    android:tag="45-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 45 -->
+            <!-- 46 -->
+            <TableRow
+                android:id="@+id/row_46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_46"
+                >
+
+                <TextView
+                    android:id="@+id/state_46"
+                    android:tag="state_46"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_46"
+                    android:hint="D"
+                    android:tag="D-46"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_46"
+                    android:hint="R"
+                    android:tag="R-46"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_46"
+                    android:text=" - "
+                    android:tag="46-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 46 -->
+            <!-- 47 -->
+            <TableRow
+                android:id="@+id/row_47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_47"
+                >
+
+                <TextView
+                    android:id="@+id/state_47"
+                    android:tag="state_47"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_47"
+                    android:hint="D"
+                    android:tag="D-47"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_47"
+                    android:hint="R"
+                    android:tag="R-47"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_47"
+                    android:text=" - "
+                    android:tag="47-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 47 -->
+            <!-- 48 -->
+            <TableRow
+                android:id="@+id/row_48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_48"
+                >
+
+                <TextView
+                    android:id="@+id/state_48"
+                    android:tag="state_48"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_48"
+                    android:hint="D"
+                    android:tag="D-48"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_48"
+                    android:hint="R"
+                    android:tag="R-48"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_48"
+                    android:text=" - "
+                    android:tag="48-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 48 -->
+            <!-- 49 -->
+            <TableRow
+                android:id="@+id/row_49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_49"
+                >
+
+                <TextView
+                    android:id="@+id/state_49"
+                    android:tag="state_49"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_49"
+                    android:hint="D"
+                    android:tag="D-49"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_49"
+                    android:hint="R"
+                    android:tag="R-49"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_49"
+                    android:text=" - "
+                    android:tag="49-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 49 -->
+            <!-- 50 -->
+            <TableRow
+                android:id="@+id/row_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_50"
+                >
+
+                <TextView
+                    android:id="@+id/state_50"
+                    android:tag="state_50"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_50"
+                    android:hint="D"
+                    android:tag="D-50"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_50"
+                    android:hint="R"
+                    android:tag="R-50"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_50"
+                    android:text=" - "
+                    android:tag="50-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 50 -->
+            <!-- 51 -->
+            <TableRow
+                android:id="@+id/row_51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="row_51"
+                >
+
+                <TextView
+                    android:id="@+id/state_51"
+                    android:tag="state_51"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/dem_51"
+                    android:hint="D"
+                    android:tag="D-51"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/rep_51"
+                    android:hint="R"
+                    android:tag="R-51"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+
+                <TextView
+                    android:id="@+id/split_51"
+                    android:text=" - "
+                    android:tag="51-split"
+                    android:onClick="cellClick"
+                    style="@style/StateCellStyle"/>
+            </TableRow>
+            <!-- End 51 -->
 
 
 
