@@ -15,12 +15,26 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.grayraven.ectest5.PoJos.VoteAllocation;
+import com.grayraven.ectest5.PoJos.VoteAllocations;
+
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 public class ElectionGrid extends AppCompatActivity {
     private static final String TAG = "theGrid";
     TableLayout mTable;
     private static final int OPTION_MENU_BASE = 0;
     private int mDemVotes = 0;
     private int mRepVotes = 0;
+    ArrayList<VoteAllocation> mAllocation2000;
+    ArrayList<VoteAllocation> mallocation1990;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +43,24 @@ public class ElectionGrid extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mTable  = (TableLayout)findViewById(R.id.election_table);
+
+        initVoteAllocations();
+        sortAllocationsByState(mAllocation2000);
+        Log.d(TAG, "sorted by abv:");
+        for(VoteAllocation  a : mAllocation2000){
+            Log.d(TAG, a.getAbv() + " : " + a.getVotes());
+        }
+
+        Log.d(TAG, "============================");
+        Log.d(TAG, "sorted by total votes");
+        sortAllocationsByVotes(mAllocation2000);
+
+        for(VoteAllocation  a : mAllocation2000){
+            Log.d(TAG, a.getAbv() + " : " + a.getVotes());
+        }
+
+
+       /* mTable  = (TableLayout)findViewById(R.id.election_table);
         final View row=mTable.getChildAt(1);
         row.setClickable(true);
         row.setOnClickListener(new View.OnClickListener(){
@@ -38,9 +69,14 @@ public class ElectionGrid extends AppCompatActivity {
             public void onClick(View v){
                 Log.d(TAG, "row " + mTable.indexOfChild(row) + " tag: " + (String) row.getTag());
             }
-        });
+        });*/
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+
+
+
     }
     /* end oncreate*/
 
@@ -167,6 +203,32 @@ public class ElectionGrid extends AppCompatActivity {
             tview2.setText(repVotes);
         }
         tview2.setBackgroundResource(colorId);
+    }
+
+    //Lists that contain the decennial allocation of electoral college votes by state
+    private void initVoteAllocations() {
+        Gson gson = new Gson();
+        Type listType = new TypeToken<List<VoteAllocation>>(){}.getType();
+        mAllocation2000 = (ArrayList<VoteAllocation>) gson.fromJson(VoteAllocations.Votes2000, listType);
+        mallocation1990 = (ArrayList<VoteAllocation>) gson.fromJson(VoteAllocations.Votes1990, listType);
+    }
+
+    private void sortAllocationsByState(ArrayList<VoteAllocation> list) {
+        Collections.sort(list, new Comparator<VoteAllocation>() {
+           public int compare(VoteAllocation a1, VoteAllocation a2){
+               return a1.getAbv().compareTo(a2.getAbv());
+           }
+        });
+    }
+
+    private void sortAllocationsByVotes(ArrayList<VoteAllocation> list) {
+        Collections.sort(list, new Comparator<VoteAllocation>() {
+            public int compare(VoteAllocation a1, VoteAllocation a2){
+                int a = Integer.parseInt(a1.getVotes());
+                int b = Integer.parseInt(a2.getVotes());
+                return  b - a; // use a - b to sort low to high
+            }
+        });
     }
 
 }
