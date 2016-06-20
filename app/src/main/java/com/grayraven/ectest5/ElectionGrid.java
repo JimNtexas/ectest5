@@ -71,6 +71,8 @@ public class ElectionGrid extends AppCompatActivity {
             }
         });
 
+        initGrid(true);
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
@@ -96,9 +98,15 @@ public class ElectionGrid extends AppCompatActivity {
     public void cellClick(View v) {
 //Get the id of the clicked object and assign it to a Textview variable
         TextView cell = (TextView) findViewById(v.getId());
-        String tag = (String) cell.getTag();
-        String name = getResources().getResourceEntryName(cell.getId());
-        Log.d(TAG, "Clicked: " + tag + " - " + name); //use name
+        String tag = (String) cell.getTag(); //ex: D-6
+        //String id = getResources().getResourceEntryName(cell.getId()); //ex D-6
+
+        String[] tokens = tag.split("-");
+        String sRow = tokens[1];
+        int index = Integer.parseInt(sRow) - 1; //ignore header row todo: adjust content_election_grid generator script so that this isn't needed
+        String name = mAllocation2000.get(index).getAbv();
+
+        Log.d(TAG, "Clicked: " + sRow + " : " + name); //use name
         if (tag.contains("split")) {
             Log.d(TAG, "ignore " + tag);
             return;
@@ -108,14 +116,13 @@ public class ElectionGrid extends AppCompatActivity {
             return;
         }
 
-        ClearStateCells(name, R.color.white, "", "");
-
-        if (tag.equals("D")) {
+        ClearStateCells(Integer.parseInt(sRow), R.color.white, "", "");
+        if (tag.contains("D")) {
             cell.setBackgroundResource(R.color.dem_blue);
-            Log.d(TAG, "report that state " + name + " voted D");
+            Log.d(TAG, "report that state " + index + ": " + name + " voted D");
         } else {
             cell.setBackgroundResource(R.color.rep_red);
-            Log.d(TAG, "report that state " + name + " voted R");
+            Log.d(TAG, "report that state " + sRow + ": " + name + " voted R");
         }
 
     }
@@ -178,16 +185,11 @@ public class ElectionGrid extends AppCompatActivity {
     private void SaveSplitVote(String name, String tag, String demVotes, String repVotes) {
         Log.d(TAG, "split name: " + name);
         Log.d(TAG, "Report " + tag + " spilt vote: " + "D: " + demVotes + " - R: " + repVotes);
-        ClearStateCells(name, R.color.purple, demVotes, repVotes);
+        //////////////ClearStateCells(name, R.color.purple, demVotes, repVotes);
     }
 
-    private void ClearStateCells(String name, int colorId, String demVotes, String repVotes) {
-        String thisRow = "";
-        for (String token : name.split("_")) {
-            thisRow = token; // row is the last token
-        }
-        int nRow = Integer.parseInt(thisRow);
-        TableRow tRow = (TableRow) mTable.getChildAt(nRow);
+    private void ClearStateCells(int row, int colorId, String demVotes, String repVotes) {
+        TableRow tRow = (TableRow) mTable.getChildAt(row);
         TextView tview1 = (TextView) tRow.getChildAt(1);
         if (!demVotes.isEmpty()) {
             tview1.setText(demVotes);
@@ -229,8 +231,20 @@ public class ElectionGrid extends AppCompatActivity {
     }
 
     private void initGrid(boolean byName) {
-        if(mTable == null) {
-            return;
+
+        int row = 1; // row zero is the headers
+        for (VoteAllocation alloc : mAllocation2000 ) {
+            String state = alloc.getAbv();
+            String votes = alloc.getVotes();
+            TableRow tRow = (TableRow) mTable.getChildAt(row);
+            TextView tview1 = (TextView) tRow.getChildAt(0);
+            tview1.setText(state + "-" + votes);
+            if(state.contains("ME") || state.contains("NE")) //split vote states
+            {
+                TextView split = (TextView)tRow.getChildAt(3);
+                split.setText(R.string.txt_split);
+            }
+            row++;
         }
     }
 
