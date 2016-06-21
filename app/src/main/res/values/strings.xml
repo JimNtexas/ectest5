@@ -8,4 +8,7 @@
     <string name="title_activity_grid_layout_test">GridLayoutTest</string>
     <string name="btn_save_text">Save</string>
     <string name="txt_split">Split</string>
+    <string name="democratic">Democratic: </string>
+    <string name="republican">Republican: </string>
+    <string name="too_many_votes" formated = "false">Please enter a total of %d votes</string>
 </resources>

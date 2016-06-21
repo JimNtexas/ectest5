@@ -122,6 +122,7 @@ public class ElectionGrid extends AppCompatActivity {
 
     }
 
+    //TODO: Use dialog fragment - http://stackoverflow.com/questions/7977392/android-dialogfragment-vs-dialog/21032871#21032871
     private void HandleSplitVotes(final String name, final String sRow) {
         Log.d(TAG, "handle split votes for " + name + "row " + sRow);
         final Dialog splitDlg = new Dialog(this);
@@ -151,7 +152,7 @@ public class ElectionGrid extends AppCompatActivity {
                 String repVotes = String.valueOf(repEdit.getText());
                 Log.d(TAG, "dem: " + demVotes + " - rep: " + repVotes);
                 if (Integer.parseInt(demVotes) + Integer.parseInt(repVotes) != finalMaxVotes) {
-                    String error = "Please enter " + Integer.toString(finalMaxVotes) + " total votes";
+                    String error = String.format(getString(R.string.too_many_votes), finalMaxVotes);
                     Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
                     return;
                 }
