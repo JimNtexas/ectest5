@@ -1,6 +1,7 @@
 package com.grayraven.ectest5;
 
 import android.app.Dialog;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -20,11 +21,16 @@ import com.google.gson.reflect.TypeToken;
 import com.grayraven.ectest5.PoJos.VoteAllocation;
 import com.grayraven.ectest5.PoJos.VoteAllocations;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import PoJos.SplitVoteResultMsg;
 
 public class ElectionGrid extends AppCompatActivity {
     private static final String TAG = "theGrid";
@@ -107,7 +113,8 @@ public class ElectionGrid extends AppCompatActivity {
         String name = mAllocation2000.get(index).getAbv();
 
         if (tag.contains("split")) {
-            HandleSplitVotes(name, sRow);
+           // HandleSplitVotes(name, sRow);
+            HandleSplitVotesDialog(name,sRow);
             return;
         }
 
@@ -120,6 +127,30 @@ public class ElectionGrid extends AppCompatActivity {
             Log.d(TAG, "report that state " + sRow + ": " + name + " voted R");
         }
 
+    }
+
+    private void HandleSplitVotesDialog(final String name, final String sRow) {
+        int maxVotes = 0;
+        String abbr = "";
+        if (name.contains("ME")) {
+            maxVotes = 4;
+            abbr = "ME";
+        }
+
+        if (name.contains("NE")) {
+            maxVotes = 5;
+            abbr = "NE";
+        }
+
+        String title = String.format(getString(R.string.split_dlg_title),name, maxVotes);
+        SplitVoteDlg dlg = SplitVoteDlg.newInstance(title, maxVotes, abbr);
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        dlg.show(transaction,TAG);
+    }
+
+    @Subscribe
+    public void onSplitVoteResultMsg(SplitVoteResultMsg msg) {
+        Log.d(TAG, "report split vote: " + msg.state + " D: " + msg.demVotes + " R: " + msg.repVotes);
     }
 
     //TODO: Use dialog fragment - http://stackoverflow.com/questions/7977392/android-dialogfragment-vs-dialog/21032871#21032871
@@ -240,6 +271,18 @@ public class ElectionGrid extends AppCompatActivity {
             }
             row++;
         }
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    public void onStop() {
+        EventBus.getDefault().unregister(this);
+        super.onStop();
     }
 
 }
