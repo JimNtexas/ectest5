@@ -142,6 +142,9 @@
 
             </TableRow>
             <!-- end header row -->
+
+            <!-- begin script generated rows-->
+
             <!-- 1 -->
             <TableRow
                 android:id="@+id/row_1"
@@ -172,7 +175,7 @@
                 <TextView
                     android:id="@+id/split_1"
                     android:text=" - "
-                    android:tag="1-split"
+                    android:tag="split-1"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -207,7 +210,7 @@
                 <TextView
                     android:id="@+id/split_2"
                     android:text=" - "
-                    android:tag="2-split"
+                    android:tag="split-2"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -242,7 +245,7 @@
                 <TextView
                     android:id="@+id/split_3"
                     android:text=" - "
-                    android:tag="3-split"
+                    android:tag="split-3"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -277,7 +280,7 @@
                 <TextView
                     android:id="@+id/split_4"
                     android:text=" - "
-                    android:tag="4-split"
+                    android:tag="split-4"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -312,7 +315,7 @@
                 <TextView
                     android:id="@+id/split_5"
                     android:text=" - "
-                    android:tag="5-split"
+                    android:tag="split-5"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -347,7 +350,7 @@
                 <TextView
                     android:id="@+id/split_6"
                     android:text=" - "
-                    android:tag="6-split"
+                    android:tag="split-6"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -382,7 +385,7 @@
                 <TextView
                     android:id="@+id/split_7"
                     android:text=" - "
-                    android:tag="7-split"
+                    android:tag="split-7"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -417,7 +420,7 @@
                 <TextView
                     android:id="@+id/split_8"
                     android:text=" - "
-                    android:tag="8-split"
+                    android:tag="split-8"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -452,7 +455,7 @@
                 <TextView
                     android:id="@+id/split_9"
                     android:text=" - "
-                    android:tag="9-split"
+                    android:tag="split-9"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -487,7 +490,7 @@
                 <TextView
                     android:id="@+id/split_10"
                     android:text=" - "
-                    android:tag="10-split"
+                    android:tag="split-10"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -522,7 +525,7 @@
                 <TextView
                     android:id="@+id/split_11"
                     android:text=" - "
-                    android:tag="11-split"
+                    android:tag="split-11"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -557,7 +560,7 @@
                 <TextView
                     android:id="@+id/split_12"
                     android:text=" - "
-                    android:tag="12-split"
+                    android:tag="split-12"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -592,7 +595,7 @@
                 <TextView
                     android:id="@+id/split_13"
                     android:text=" - "
-                    android:tag="13-split"
+                    android:tag="split-13"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -627,7 +630,7 @@
                 <TextView
                     android:id="@+id/split_14"
                     android:text=" - "
-                    android:tag="14-split"
+                    android:tag="split-14"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -662,7 +665,7 @@
                 <TextView
                     android:id="@+id/split_15"
                     android:text=" - "
-                    android:tag="15-split"
+                    android:tag="split-15"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -697,7 +700,7 @@
                 <TextView
                     android:id="@+id/split_16"
                     android:text=" - "
-                    android:tag="16-split"
+                    android:tag="split-16"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -732,7 +735,7 @@
                 <TextView
                     android:id="@+id/split_17"
                     android:text=" - "
-                    android:tag="17-split"
+                    android:tag="split-17"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -767,7 +770,7 @@
                 <TextView
                     android:id="@+id/split_18"
                     android:text=" - "
-                    android:tag="18-split"
+                    android:tag="split-18"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -802,7 +805,7 @@
                 <TextView
                     android:id="@+id/split_19"
                     android:text=" - "
-                    android:tag="19-split"
+                    android:tag="split-19"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -837,7 +840,7 @@
                 <TextView
                     android:id="@+id/split_20"
                     android:text=" - "
-                    android:tag="20-split"
+                    android:tag="split-20"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -872,7 +875,7 @@
                 <TextView
                     android:id="@+id/split_21"
                     android:text=" - "
-                    android:tag="21-split"
+                    android:tag="split-21"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -907,7 +910,7 @@
                 <TextView
                     android:id="@+id/split_22"
                     android:text=" - "
-                    android:tag="22-split"
+                    android:tag="split-22"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -942,7 +945,7 @@
                 <TextView
                     android:id="@+id/split_23"
                     android:text=" - "
-                    android:tag="23-split"
+                    android:tag="split-23"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -977,7 +980,7 @@
                 <TextView
                     android:id="@+id/split_24"
                     android:text=" - "
-                    android:tag="24-split"
+                    android:tag="split-24"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1012,7 +1015,7 @@
                 <TextView
                     android:id="@+id/split_25"
                     android:text=" - "
-                    android:tag="25-split"
+                    android:tag="split-25"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1047,7 +1050,7 @@
                 <TextView
                     android:id="@+id/split_26"
                     android:text=" - "
-                    android:tag="26-split"
+                    android:tag="split-26"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1082,7 +1085,7 @@
                 <TextView
                     android:id="@+id/split_27"
                     android:text=" - "
-                    android:tag="27-split"
+                    android:tag="split-27"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1117,7 +1120,7 @@
                 <TextView
                     android:id="@+id/split_28"
                     android:text=" - "
-                    android:tag="28-split"
+                    android:tag="split-28"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1152,7 +1155,7 @@
                 <TextView
                     android:id="@+id/split_29"
                     android:text=" - "
-                    android:tag="29-split"
+                    android:tag="split-29"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1187,7 +1190,7 @@
                 <TextView
                     android:id="@+id/split_30"
                     android:text=" - "
-                    android:tag="30-split"
+                    android:tag="split-30"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1222,7 +1225,7 @@
                 <TextView
                     android:id="@+id/split_31"
                     android:text=" - "
-                    android:tag="31-split"
+                    android:tag="split-31"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1257,7 +1260,7 @@
                 <TextView
                     android:id="@+id/split_32"
                     android:text=" - "
-                    android:tag="32-split"
+                    android:tag="split-32"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1292,7 +1295,7 @@
                 <TextView
                     android:id="@+id/split_33"
                     android:text=" - "
-                    android:tag="33-split"
+                    android:tag="split-33"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1327,7 +1330,7 @@
                 <TextView
                     android:id="@+id/split_34"
                     android:text=" - "
-                    android:tag="34-split"
+                    android:tag="split-34"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1362,7 +1365,7 @@
                 <TextView
                     android:id="@+id/split_35"
                     android:text=" - "
-                    android:tag="35-split"
+                    android:tag="split-35"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1397,7 +1400,7 @@
                 <TextView
                     android:id="@+id/split_36"
                     android:text=" - "
-                    android:tag="36-split"
+                    android:tag="split-36"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1432,7 +1435,7 @@
                 <TextView
                     android:id="@+id/split_37"
                     android:text=" - "
-                    android:tag="37-split"
+                    android:tag="split-37"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1467,7 +1470,7 @@
                 <TextView
                     android:id="@+id/split_38"
                     android:text=" - "
-                    android:tag="38-split"
+                    android:tag="split-38"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1502,7 +1505,7 @@
                 <TextView
                     android:id="@+id/split_39"
                     android:text=" - "
-                    android:tag="39-split"
+                    android:tag="split-39"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1537,7 +1540,7 @@
                 <TextView
                     android:id="@+id/split_40"
                     android:text=" - "
-                    android:tag="40-split"
+                    android:tag="split-40"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1572,7 +1575,7 @@
                 <TextView
                     android:id="@+id/split_41"
                     android:text=" - "
-                    android:tag="41-split"
+                    android:tag="split-41"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1607,7 +1610,7 @@
                 <TextView
                     android:id="@+id/split_42"
                     android:text=" - "
-                    android:tag="42-split"
+                    android:tag="split-42"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1642,7 +1645,7 @@
                 <TextView
                     android:id="@+id/split_43"
                     android:text=" - "
-                    android:tag="43-split"
+                    android:tag="split-43"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1677,7 +1680,7 @@
                 <TextView
                     android:id="@+id/split_44"
                     android:text=" - "
-                    android:tag="44-split"
+                    android:tag="split-44"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1712,7 +1715,7 @@
                 <TextView
                     android:id="@+id/split_45"
                     android:text=" - "
-                    android:tag="45-split"
+                    android:tag="split-45"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1747,7 +1750,7 @@
                 <TextView
                     android:id="@+id/split_46"
                     android:text=" - "
-                    android:tag="46-split"
+                    android:tag="split-46"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1782,7 +1785,7 @@
                 <TextView
                     android:id="@+id/split_47"
                     android:text=" - "
-                    android:tag="47-split"
+                    android:tag="split-47"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1817,7 +1820,7 @@
                 <TextView
                     android:id="@+id/split_48"
                     android:text=" - "
-                    android:tag="48-split"
+                    android:tag="split-48"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1852,7 +1855,7 @@
                 <TextView
                     android:id="@+id/split_49"
                     android:text=" - "
-                    android:tag="49-split"
+                    android:tag="split-49"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1887,7 +1890,7 @@
                 <TextView
                     android:id="@+id/split_50"
                     android:text=" - "
-                    android:tag="50-split"
+                    android:tag="split-50"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
@@ -1922,13 +1925,11 @@
                 <TextView
                     android:id="@+id/split_51"
                     android:text=" - "
-                    android:tag="51-split"
+                    android:tag="split-51"
                     android:onClick="cellClick"
                     style="@style/StateCellStyle"/>
             </TableRow>
             <!-- End 51 -->
-
-
 
         </TableLayout>
     </ScrollView>

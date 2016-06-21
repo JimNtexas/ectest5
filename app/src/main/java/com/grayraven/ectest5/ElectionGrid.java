@@ -106,13 +106,8 @@ public class ElectionGrid extends AppCompatActivity {
         int index = Integer.parseInt(sRow) - 1; //ignore header row todo: adjust content_election_grid generator script so that this isn't needed
         String name = mAllocation2000.get(index).getAbv();
 
-        Log.d(TAG, "Clicked: " + sRow + " : " + name); //use name
         if (tag.contains("split")) {
-            Log.d(TAG, "ignore " + tag);
-            return;
-        }
-        if (tag.contains("votes")) {
-            HandleSplitVotes(name, tag);
+            HandleSplitVotes(name, sRow);
             return;
         }
 
@@ -127,8 +122,8 @@ public class ElectionGrid extends AppCompatActivity {
 
     }
 
-    private void HandleSplitVotes(final String name, final String tag) {
-        Log.d(TAG, "handle split votes for " + tag);
+    private void HandleSplitVotes(final String name, final String sRow) {
+        Log.d(TAG, "handle split votes for " + name + "row " + sRow);
         final Dialog splitDlg = new Dialog(this);
         splitDlg.setContentView(R.layout.vote_split_dlg);
         TextView titleView = (TextView) splitDlg.findViewById(R.id.dlgTitle);
@@ -161,13 +156,11 @@ public class ElectionGrid extends AppCompatActivity {
                     return;
                 }
 
-                SaveSplitVote(name, tag, demVotes, repVotes);
+                SaveSplitVote(name, sRow, demVotes, repVotes);
+
                 splitDlg.dismiss();
             }
 
-          /*  private void SaveSplitVote(String tag, String demVotes, String repVotes) {
-                Log.d(TAG, "Report " + tag + " spilt vote: " + "D: " + demVotes + " - R: " + repVotes );
-            }*/
         });
 
         final Button dlogCancel = (Button) splitDlg.findViewById(R.id.dlg_cancel);
@@ -182,10 +175,10 @@ public class ElectionGrid extends AppCompatActivity {
 
     }
 
-    private void SaveSplitVote(String name, String tag, String demVotes, String repVotes) {
+    private void SaveSplitVote(String name, String row, String demVotes, String repVotes) {
         Log.d(TAG, "split name: " + name);
-        Log.d(TAG, "Report " + tag + " spilt vote: " + "D: " + demVotes + " - R: " + repVotes);
-        //////////////ClearStateCells(name, R.color.purple, demVotes, repVotes);
+        Log.d(TAG, "Report " + row + " spilt vote: " + "D: " + demVotes + " - R: " + repVotes);
+        ClearStateCells(Integer.parseInt(row), R.color.purple, demVotes, repVotes);
     }
 
     private void ClearStateCells(int row, int colorId, String demVotes, String repVotes) {
